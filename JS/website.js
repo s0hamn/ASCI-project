@@ -13,6 +13,6 @@ if (width < 1000) {
 
         element.innerHTML = newHTML
 
-        console.log(newHTML);
+        // console.log(newHTML);
     })
 }
