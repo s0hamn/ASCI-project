@@ -243,6 +243,7 @@ a {
     padding: 20px 10px;
     border-radius: 10px;
     width: 40%;
+    min-width: 250px;
 }
 
 .links a {
@@ -320,7 +321,7 @@ a {
 
 .about-content .about-img .glass {
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
-    background-size: 400%;
+    background-size: 100%;
     width: 300px;
     height: 300px;
     border-radius: 10px;
@@ -629,6 +630,15 @@ footer {
     margin: 0 10px;
 }
 
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    display: none;
+}
+
 @media only screen and (max-width: 1000px) {
     .about-content .about-img {
         display: none;
@@ -637,20 +647,43 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-}
-
-@media only screen and (max-width: 450px) {
-    .about-content .about-img {
+    .my-name-info h1 {
+        font-size: 60px;
+    }
+    .my-name-info h4 {
+        font-size: 30px;
+        text-align: center;
+    }
+    nav ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        /* text-align: right; */
+        margin: 10px auto;
+    }
+    nav ul li a {
+        color: white;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .proj-items {
         display: none;
     }
-    .project {
-        flex-direction: column;
-        align-items: center;
-    }
-    .proj-img .img-android {
-        width: 60%;
-    }
-    .blue-bg>.img-android>img {
-        width: 66%;
+    /* #projects i {
+        display: none;
+    } */
+    .proj-info {
+        margin-top: 40px;
     }
 }
+
+@media only screen and (max-width: 450px) {}
