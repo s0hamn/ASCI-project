@@ -1,7 +1,7 @@
 console.log("This is my website")
 
 let width = window.outerWidth;
-
+var MenuItems = document.getElementById("MenuItems");
 if (width < 1000) {
     let projects = document.getElementsByClassName('project');
 
@@ -13,6 +13,7 @@ if (width < 1000) {
         let newHTML = projImg + projInfo;
 
         element.innerHTML = newHTML
+        MenuItems.style.maxHeight = "0px";
 
         // console.log(newHTML);
 
@@ -23,8 +24,8 @@ if (width < 1000) {
     myinfoNameH1.innerText = `Soham N`;
 }
 
-var MenuItems = document.getElementById("MenuItems");
-MenuItems.style.maxHeight = "0px";
+
+
 
 function menutoggle() {
     if (MenuItems.style.maxHeight == "0px") {

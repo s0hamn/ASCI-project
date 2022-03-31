@@ -639,6 +639,10 @@ footer {
     display: none;
 }
 
+#MenuItems {
+    max-height: 200px;
+}
+
 @media only screen and (max-width: 1000px) {
     .about-content .about-img {
         display: none;
@@ -683,6 +687,9 @@ footer {
     } */
     .proj-info {
         margin-top: 40px;
+    }
+    #MenuItems {
+        max-height: 0px;
     }
 }
 
