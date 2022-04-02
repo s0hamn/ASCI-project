@@ -34,7 +34,3 @@ function menutoggle() {
         MenuItems.style.maxHeight = "0px";
     }
 }
-
-function menuitemtoggle() {
-    MenuItems.style.maxHeight = "0px";
-}

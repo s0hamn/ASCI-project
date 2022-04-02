@@ -307,7 +307,7 @@ a {
     color: #efefff;
 }
 
-.about-text p a:hover {
+.about-text p a {
     color: blue;
 }
 
@@ -640,7 +640,7 @@ footer {
 }
 
 #MenuItems {
-    max-height: 200px;
+    max-height: z0px;
 }
 
 @media only screen and (max-width: 1000px) {
