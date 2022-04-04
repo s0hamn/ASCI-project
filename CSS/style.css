@@ -308,7 +308,7 @@ a {
 }
 
 .about-text p a {
-    color: blue;
+    color: white;
 }
 
 .about-content .about-img {
@@ -692,5 +692,3 @@ footer {
         max-height: 0px;
     }
 }
-
-@media only screen and (max-width: 450px) {}
