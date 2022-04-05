@@ -181,25 +181,6 @@ nav ul li:hover ul {
     height: 100px;
 }
 
-
-/* nav ul li::after {
-    content: '';
-    position: relative;
-    pointer-events: none;
-    display: block;
-    background: white;
-    margin: auto;
-    width: 0%;
-    height: 3px;
-    border-radius: 3px;
-    transition: width 0.3s;
-} */
-
-
-/* nav ul li:hover::after {
-    width: 90%;
-} */
-
 a {
     text-decoration: none;
     color: white;
@@ -336,6 +317,29 @@ a {
     border-radius: 50%;
 }
 
+#accomplishments {
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#accomplishments ul {
+    /* width: 100%; */
+    padding: 0 0 0 30px;
+    align-self: flex-start;
+    margin: 30px 0;
+}
+
+#accomplishments ul li {
+    margin-left: 30px;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 /* -----------------projects---------------- */
 
@@ -424,18 +428,6 @@ a {
     margin-left: 10px;
     transition: margin-left 0.5s;
 }
-
-
-/* .proj-img {
-    display: flex;
-    align-items: center;
-    /* margin: 0 15px; */
-
-
-/* flex: 1; */
-
-
-/* } */
 
 .blue-bg {
     background: #0077ff;
